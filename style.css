@@ -1,14 +1,14 @@
 body {
     font-family: sans-serif;
-    line-height: 1.6;
+    line-height: 1.4;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: #070707;
 }
 
 header {
-    background: #333;
+    background: #8ace79;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -22,12 +22,18 @@ main {
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
+    background: #0d7be2;
     color: #fff;
-    position: fixed;
+    position: static;
     bottom: 0;
     width: 100%;
+    height: 50px; /* Explicit height for footer */
 }
+
+body {
+    padding-bottom: 50px; /* Matches the footer height to prevent overlap */
+}
+
 
 button {
     padding: 10px 15px;
@@ -40,4 +46,88 @@ button {
 
 button:hover {
     background-color: #4cae4c;
+}
+
+/* ... (your existing CSS) ... */
+
+#latin-words-overview ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#latin-words-overview li {
+    margin-bottom: 10px;
+}
+
+#latin-words-overview a {
+    text-decoration: none;
+    color: #007bff; /* Or your preferred link color */
+}
+
+#latin-words-overview a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for Previous/Next navigation on sub-pages
+.page-navigation {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.page-navigation a {
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+} */
+
+.page-navigation {
+    /* Temporary debugging styles: */
+    border: 2px solid red !important;
+    background-color: yellow !important;
+    padding: 10px !important; /* Ensure it has some space */
+    min-height: 30px; /* Ensure it has some height */
+
+    /* Your existing styles (keep them, but the ones above will override if there's a conflict due to !important) */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    /* Add any other positioning properties you might have tried here */
+    /* position: relative; /* Good default if not already set */
+    /* z-index: 1000; /* Temporarily try a high z-index */
+}
+
+.page-navigation a {
+    /* Temporary debugging styles for links: */
+    border: 1px solid blue !important;
+    color: black !important; /* Ensure link text is visible against yellow */
+    background-color: lightgreen !important; /* Make links stand out */
+
+
+    /* Your existing styles */
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    /* border: 1px solid #ddd; /* Original border, overridden by temp style */
+    border-radius: 4px;
+    /* color: #333; /* Original color, overridden by temp style */
+}
+
+.page-navigation a:hover {
+    background-color: #f4f4f4;
+    border-color: #ccc;
+}
+
+/* Adjust header nav if needed */
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff; /* Assuming header has dark background */
+}
+
+header nav a:hover {
+    text-decoration: underline;
 }
